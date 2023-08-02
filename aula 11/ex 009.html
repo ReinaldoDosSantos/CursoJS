@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 270px;
+            border: 1px solid black;
+            padding: 0px 15px 20px 15px;
+            margin: auto;
+        }
+        
+       
+
+    </style>
+</head>
+<body>
+    
+    
+        <h1>Você e Brasileiro ou Estrangeiro ?</h1>
+        <div class="container">
+        <p>Coloque um Pais no campo</p>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Verificar" onclick="calcular()">
+        <p id="res">Resultado</p>
+    </div>
+
+    <script>
+        function calcular(){
+            var tpais = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            var pais = (tpais.value)
+            if (pais == 'Brasil'){
+                res.innerHTML = 'Você é Brasileiro'
+            }else{
+                res.innerHTML = 'Você é Estrangeiro'
+            }
+
+        }
+    </script>
+    
+
+    
+        
+       
+        
+        
+
+
+
+    </script>
+</body>
+</html>
